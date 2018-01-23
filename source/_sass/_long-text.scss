@@ -1,6 +1,7 @@
 .long-text {
   text-align: left;
   font-size: 1.2rem;
+  p { font-weight: 300; }
 
   @include breakpoint($medium-up) {
     font-size: 1.6rem;
@@ -9,9 +10,17 @@
 
   &--long-text--negative { color: white; }
 
-  a { color: $blue; }
+  a { color: $accent; }
+  a:hover { 
+    background-color: rgba($accent, .6); 
+    color: white;
+  }
 
-  &__highlight { color: $yellow; }
+  &__highlight { 
+    font-weight: bold;
+    background-color: rgba($accent, .6);
+    font-weight: 800;
+  }
 
   p + p {
     margin-top: 15px;
@@ -23,13 +32,14 @@
   }
 
   ul {
-    border-top: 1px solid rgba($blue, .4);
+    border-top: 1px solid rgba($accent, 1);
     padding: 0;
 
     li {
       padding: 10px 0;
-      border-bottom: 1px dotted rgba($blue, .4);
+      border-bottom: 1px solid rgba($accent, 1);
       list-style: none;
+      font-weight: 300;
     }
   }
 
@@ -56,7 +66,7 @@
     text-align: center;
     font-weight: 100;
     padding:  3px 20px;
-    border: 1px solid $blue;
+    border: 1px solid $accent;
     width: 80px;
     height: 80px;
     border-radius: 50%;

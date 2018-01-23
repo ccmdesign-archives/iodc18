@@ -19,7 +19,7 @@
 
     <div class="wrapper header">
       <div class="logo">
-        <a href="/"><img src="{{ '/images/logo-blue-white.png' | relative_url }}" alt="IODC18"></a>
+        <a href="./"><img src="{{ '/images/logo-blue-white.png' | relative_url }}" alt="IODC18"></a>
       </div>
       
       <div class="social-media">
@@ -34,11 +34,18 @@
 
     </div>
       
-      {{content}}
-      
+    {{content}}
+    
+    <div class="partners section">
+      <h2>Partners</h2>
+      <a href="#" class="partners__logo" target="_blank"><img class="partners--argentina" src="{{ '/images/argentina-government-logo.png' | relative_url }}" alt="Argentina Government"></a>
+      <a href="https://www.idrc.ca/" class="partners__logo" target="_blank"><img class="partners--idrc" src="{{ '/images/idrc-logo.png' | relative_url }}" alt="IDRC"></a>
+      <a href="http://www.worldbank.org/" class="partners__logo" target="_blank"><img class="partners--worldbank" src="{{ '/images/world-bank-logo.png' | relative_url }}" alt="World Bank"></a>
+      <a href="http://od4d.net/" class="partners__logo" target="_blank"><img class="partners--od4d" src="{{ '/images/od4d-logo-white.png' | relative_url }}" alt="OD4D"></a>
+    </div>
+    
     <div id="overlay" class="js-overlay"></div>
     <script src="{{'/vendor/jquery-2.1.4.min.js' | relative_url}}"></script>
-    <script src="{{'/vendor/slick.min.js' | relative_url}}"></script>
     <script src="{{'/js/scripts.js' | relative_url}}"></script>
   </body>
 </html>

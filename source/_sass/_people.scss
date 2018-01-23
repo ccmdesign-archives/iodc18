@@ -6,7 +6,7 @@
     list-style: none;
     padding: 5px 0;
     margin: 5px 0;
-    border-bottom: 1px dotted rgba($yellow, .4);
+    border-bottom: 1px dotted rgba($accent, 1);
 
     @include breakpoint($medium-up) { 
       width: 45%;
@@ -25,10 +25,11 @@
   }
 
   &__name {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 
   &__org {
     opacity: .6;
+    font-size: 1.3rem;
   }
 }

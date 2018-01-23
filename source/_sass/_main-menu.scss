@@ -4,3 +4,26 @@
   z-index: 2;
 }
 
+.button {
+  display: block;
+  border: 1px solid white;
+  margin-bottom: 10px;
+  padding: 7px;
+  text-align: center;
+  font-size: 1.3rem;
+  color: white;
+  text-transform: uppercase;
+
+  @include breakpoint($medium-up) {
+    display: inline-block;
+    padding: 20px 30px;
+    margin: 10px;
+    font-size: 1.3rem;
+  }
+
+  &:hover {
+    border-color: $accent;
+    color: white;
+    background-color: rgba($accent, .1);
+  }
+}
