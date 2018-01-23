@@ -38,7 +38,7 @@ h2 {
 }
 
 .section {
-  border-top: 1px dotted $yellow;
+  border-top: 1px dotted white;
   padding: 30px 0;
 
   @include breakpoint($medium-up) {
