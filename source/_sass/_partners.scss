@@ -19,12 +19,12 @@
   &__logo {
     display: inline-block;
     margin-bottom: 50px;
+    opacity: 1;
     
     @include breakpoint($medium-up) {
       margin: 30px 20px;
-      opacity: .6;
-
-      &:hover { opacity: 1; }
+      text-align: center;
+    //   &:hover { opacity: 1; }
     }
     
     img { 
