@@ -29,7 +29,11 @@
         <a target="_blank" href="https://www.flickr.com/photos/144810968@N02/albums"><img src="{{ '/images/flickr.png' | relative_url }}" alt="flickr icon"></a>
       </div>
       <div class="lang">
-        <a class="lang-en lang--active" href="#">EN</a> | <a class="lang-es" href="#">ES</a>
+        {% if page.lang == 'en' %}
+            <a class="lang-en lang--active" href="#">EN</a> | <a class="lang-es" href="#">ES</a>
+        {% else %}
+            <a class="lang-en" href="#">EN</a> | <a class="lang-es lang--active" href="#">ES</a>
+        {% endif%}
       </div>
 
     </div>
