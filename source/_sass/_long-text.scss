@@ -11,12 +11,12 @@
   &--long-text--negative { color: white; }
 
   a { color: $accent; }
-  a:hover { 
-    background-color: rgba($accent, .6); 
+  a:hover {
+    background-color: rgba($accent, .6);
     color: white;
   }
 
-  &__highlight { 
+  &__highlight {
     font-weight: bold;
     background-color: rgba($accent, .6);
     font-weight: 800;
@@ -29,6 +29,7 @@
   h2 {
     margin-bottom: 20px;
     line-height: 1.4;
+    font-weight: bold;
   }
 
   ul {
