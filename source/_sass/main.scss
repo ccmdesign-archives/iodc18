@@ -54,7 +54,12 @@ h2 {
 }
 
 .wrapper-fixer {
-    p, a, div {
+    .help-block > p,
+    input,
+    a {
         color: white;
+    }
+    div.md-preview {
+        color: black;
     }
 }
