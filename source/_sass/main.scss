@@ -46,10 +46,15 @@ h2 {
     max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
-  }  
+  }
 
   > * { margin: 0; }
 
   > * + * { margin-bottom: 10px; }
 }
 
+.wrapper-fixer {
+    p, a, div {
+        color: white;
+    }
+}
