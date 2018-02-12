@@ -81,3 +81,25 @@
     @include breakpoint($medium-up) { margin: 0 30px; }
   }
 }
+
+.cfp.long-text {
+    ul {
+        list-style-type: decimal;
+        border: none;
+        padding: 0 40px;
+    }
+    li {
+        list-style: decimal;
+        border: none;
+    }
+    li ul {
+        list-style-type: circle;
+        border: none;
+    }
+    li li {
+        list-style: circle;
+        border: none;
+        font-size: smaller;
+        padding: 4px 0;
+    }
+}
