@@ -46,7 +46,8 @@
 
     </div>
     <div class="back-button">
-      {% if page.name != 'home' %}
+      {% if page.hide_back_button %}
+      {% else %}
         {% if page.lang == 'en' %}
           <a href="./" class="back-button__button"><i class="material-icons">arrow_back</i>Back</a>
         {% else %}
