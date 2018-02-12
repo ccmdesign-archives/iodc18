@@ -19,7 +19,14 @@
 
     <div class="wrapper header">
       <div class="logo">
-        <a href="./"><img src="{{ '/images/logo-blue-white.png' | relative_url }}" alt="IODC18"></a>
+
+        <a href="./">
+            {% if page.lang == 'en' %}
+                <img src="{{ '/images/iodc18-logo-en.png' | relative_url }}" alt="IODC18">
+            {% else %}
+                <img src="{{ '/images/iodc18-logo-es.png' | relative_url }}" alt="IODC18">
+            {% endif%}
+        </a>
       </div>
 
       <div class="social-media">
