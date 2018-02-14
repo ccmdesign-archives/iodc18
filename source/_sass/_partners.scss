@@ -1,23 +1,10 @@
 .partners {
   text-align: center;
   display: flex;
-
-  // @include breakpoint($medium-up) {
-  //   position: fixed;
-  //   bottom: 0;
-  //   right: 0;
-  //   left: 0;
-  //   background-color: rgba(#0e0f13, .9);
-  //   max-width: 100%;
-  //   z-index: 3;
-  // }
-  
-  h2 {
-    @include breakpoint($medium-up) { display: none; }
-  }
+  @include breakpoint($small-only) { flex-direction: column; }
 
   &__logo {
-    display: inline-block;
+    @include breakpoint($medium-up) { display: inline-block; }
     margin-bottom: 50px;
     opacity: 1;
     
