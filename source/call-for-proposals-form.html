@@ -425,7 +425,37 @@ lang: en
 
 </main>
 
+<script>
+    var tracksInputs = document.querySelectorAll('.tracks-question input');
 
+    function updateTrackSubitems() {
+        for(var i=0; i<tracksInputs.length; i++) {
+            if (tracksInputs[i].value === "The Big Picture: 45 minutes to 1 hour") {
+                var trackSection = document.querySelector(".big-picture-items");
+            } else if (tracksInputs[i].value === "Action Track: 45 minutes to 1 hour") {
+                var trackSection = document.querySelector(".action-items");
+            } else if (tracksInputs[i].value === "Impact Track: 15 minutes") {
+                var trackSection = document.querySelector(".impact-items");
+            }
+
+            var firstTrackInput = trackSection.querySelectorAll('input')[0];
+
+            if (tracksInputs[i].checked) {
+                trackSection.classList.add('js-active');
+                firstTrackInput.setAttribute('required', 'required');
+            } else {
+                trackSection.classList.remove('js-active');
+                firstTrackInput.removeAttribute('required');
+            }
+        }
+    }
+
+
+    for(var i=0; i<tracksInputs.length; i++) {
+        tracksInputs[i].addEventListener('change', updateTrackSubitems);
+    }
+
+</script>
 
 
 
