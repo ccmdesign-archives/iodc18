@@ -19,7 +19,7 @@ input[type="password"],
 textarea {
     text-align: left;
     border: 0;
-    background-color: $gray-10;
+    background-color: rgba(black, .1);
     width: 100%;
     padding: 10px 15px;
     margin-bottom: 15px;
@@ -30,7 +30,7 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus,
 textarea:focus {
-    background-color: $gray-20;
+    background-color: rgba(black, .2);
     @extend .u-transition;
 }
 
@@ -76,38 +76,38 @@ form,
     padding: 10px 0;
 
     ::-webkit-input-placeholder {
-        color: $black;
+        color: black;
         text-align: left;
     }
     :-moz-placeholder {
-        color: $black;
+        color: black;
         text-align: left;
     } /* Firefox 18- */
     ::-moz-placeholder {
-        color: $black;
+        color: black;
         text-align: left;
     } /* Firefox 19+ */
     :-ms-input-placeholder {
-        color: $black;
+        color: black;
         text-align: left;
     }
 
     &--negative {
-        input { color: $white; }
+        input { color: white; }
 
         input[type='text'], input[type='email'], input[type='submit'], textarea {
-            background-color: $white-10;
+            background-color: rgba(white, .1);
             @include placeholder {
-                color: $white;
+                color: white;
             }
             &:focus {
-                background-color: $white-20;
+                background-color: rgba(white, .2);
                 @extend .u-transition;
             }
         }
 
         input[type="submit"]:hover {
-            background-color: $white-20;
+            background-color: rgba(white, .2);
         }
     }
 }
@@ -145,7 +145,7 @@ form,
 }
 
 .select {
-    background-color: $gray-10;
+    background-color: rgba(black, .1);
     text-align: left;
     padding: 0 15px;
     margin-bottom: 15px;
@@ -177,7 +177,7 @@ form,
         margin: 0 auto 0 auto;
         width: 42px;
         height: 32px;
-        color: $black;
+        color: black;
         z-index: 1;
         pointer-events: none;
     }
@@ -196,7 +196,7 @@ form,
     }
 
     &:hover {
-        background-color: $gray-20;
+        background-color: rgba(black, .2);
         @extend .u-transition;
     }
 }
