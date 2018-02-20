@@ -27,7 +27,7 @@ button:focus {
 
     .ss-choice-item {
       margin: 5px 5px 5px 0;
-      padding: 8px 10px;
+      padding: 0 10px 1px 0;
       border: 1px solid rgba(white, .3);
       cursor: pointer;
 
@@ -45,20 +45,28 @@ button:focus {
         cursor: pointer;
         display: inline-block;
         margin-right: 15px;
-        // visibility: hidden;
+        margin-left: 5px;
       }
 
       input[type="checkbox"]:before,
       input[type="radio"]:before {
         @extend .u-material-icons;
-        visibility: visible;
-        margin-top: -4px;
+        margin-top: -14px;
+        margin-left: -5px;
+        background-color: $blue;
+        padding: 7px;
+        color: white;
       }
 
       input[type="radio"]:before { content: 'radio_button_unchecked'; }
       input[type="radio"]:checked:before { content: 'radio_button_checked'; }
       input[type="checkbox"]:before { content: 'check_box_outline_blank'; }
       input[type="checkbox"]:checked:before { content: 'check_box'; }
+
+      .ss-choice-label {
+        padding: 7px 7px 0 17px;
+        display: inline-block;
+      }
     }
   }
 
@@ -92,7 +100,11 @@ button:focus {
   .ss-q-other-container {
     margin: 0 0 0 4px;
     padding: 0;
-    input { border-width: 0 0 1px 0; }
+    width: calc(100% - 125px);
+    input { 
+      border-width: 0 0 1px 0; 
+      padding: 1px 15px;
+    }
   }
 
   .tracks-question, .big-picture-items, .action-items, .impact-items, .format-question {
