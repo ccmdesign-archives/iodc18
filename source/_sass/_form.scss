@@ -64,6 +64,23 @@ button:focus {
 }
 
 .form--google.form--google.form--google.form--google.form--google.form--google.form--google.form--google.form--google.form--google.form--google.form--google {
+  ::-webkit-input-placeholder {
+        color: rgba(white, .6);
+        text-align: left;
+    }
+    :-moz-placeholder {
+        color: rgba(white, .6);
+        text-align: left;
+    } /* Firefox 18- */
+    ::-moz-placeholder {
+        color: rgba(white, .6);
+        text-align: left;
+    } /* Firefox 19+ */
+    :-ms-input-placeholder {
+        color: rgba(white, .6);
+        text-align: left;
+    }
+
   max-width: 700px;
   margin: 0 auto;
   text-align: left;
@@ -77,6 +94,19 @@ button:focus {
 
   .ss-q-title {
     > label { display: inline; }
+  }
+
+  .other__wrapper {
+    width: calc( 100% - 10px) !important;
+    display: flex;
+    flex-wrap: nowrap;
+
+    > label { flex: 0; }
+    > .ss-q-other-container {
+      flex: 1;
+      width: inherit;
+    }
+
   }
 
   .ss-choices[role="radiogroup"] {
@@ -158,10 +188,18 @@ button:focus {
   .ss-q-other-container {
     margin: 0 0 0 4px;
     padding: 0;
-    width: calc(100% - 125px);
+    width: calc(100% - 78px);
+
+    > label {
+      width: 0;
+    }
+
+    // width: calc(100% - 215px);
     input { 
-      border-width: 0 0 1px 0; 
-      padding: 1px 15px;
+      border-width: 0 ;
+      border-bottom: 1px dotted rgba(white, .3);
+      padding: 1px 15px 1px 5px;
+      margin-left: -23px;
     }
   }
 
