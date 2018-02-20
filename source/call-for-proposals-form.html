@@ -468,7 +468,28 @@ lang: en
 <script>
     var tracksInputs = document.querySelectorAll('.tracks-question input');
 
+    function clearTrackInputs() {
+        var trackInputs = [
+            document.querySelectorAll(".big-picture-items input"),
+            document.querySelectorAll(".action-items input"),
+            document.querySelectorAll(".impact-items input"),
+        ];
+
+        for(var i=0; i<trackInputs.length; i++) {
+            var inputs = trackInputs[i];
+            for(var j=0; j<inputs.length; j++) {
+                if(inputs[j].type === "text")
+                    inputs[j].value = "";
+
+                if(inputs[j].type === "radio")
+                    inputs[j].checked = false;
+            }
+        }
+    }
+
     function updateTrackSubitems() {
+        clearTrackInputs();
+
         for(var i=0; i<tracksInputs.length; i++) {
             if (tracksInputs[i].value === "The Big Picture: 45 minutes to 1 hour") {
                 var trackSection = document.querySelector(".big-picture-items");
