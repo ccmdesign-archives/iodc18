@@ -12,7 +12,7 @@ lang: en
 <script type="text/javascript">var submitted=false;</script>
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='form-submitted.html';}"></iframe>
 
-<!-- Custom Line --> <form class="form form--google" action="https://docs.google.com/forms/d/e/1FAIpQLSfN8wnjrKzB28EzJbGWS0asCD7K4Fi8Hg2uemqec1kLoHnJqA/formResponse" method="POST" id="ss-form" target="_self" autocomplete="on" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0;">
+<!-- Custom Line --> <form class="form form--google" action="https://docs.google.com/forms/d/e/1FAIpQLSfN8wnjrKzB28EzJbGWS0asCD7K4Fi8Hg2uemqec1kLoHnJqA/formResponse" method="POST" id="ss-form" target="hidden_iframe" autocomplete="on" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0;">
 <section class="js-hidden"> <!-- Custom Line -->
     <div class="ss-form-question errorbox-good" role="listitem">
     <div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
@@ -414,360 +414,41 @@ lang: en
 <div class="error-message" id="2059408904_errorMessage"></div>
 <div class="required-message">This is a required question</div></div></div></div>
 
-<div class="ss-form-question errorbox-good" role="listitem">
-    <div dir="auto" class="ss-item  ss-text">
-        <div class="ss-form-entry">
-            <label class="ss-q-item-label" for="entry_107602731">
-                <div class="ss-q-title">Name
-                </div>
-                <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-            </label>
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Organization</th>
+        <th>Gender</th>
+      </tr>
+    </thead>
+    <tbody id="participants-wrapper">
+      <tr id="participants-template">
+        <td>
+          <input type="text" name="__entry_name__" value="" class="ss-q-short" dir="auto" aria-label="Name  "
+            title="">
+        </td>
+        <td>
+          <input type="text" name="__entry_organization__" value="" class="ss-q-short" dir="auto" aria-label="Organization  "
+            title="">
+        </td>
+        <td>
+          <select name="__entry_gender__" aria-label="Gender  ">
+            <option value=""></option>
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+            <option value="Other">Other</option>
+          </select>
+        </td>
+      </tr>
 
-            <input type="text" name="entry.107602731" value="" class="ss-q-short" id="entry_107602731" dir="auto" aria-label="Name  "
-                title="">
-            <div class="error-message" id="1041148960_errorMessage"></div>
-            <div class="required-message">This is a required question</div>
-        </div>
-    </div>
-</div>
-<div class="ss-form-question errorbox-good" role="listitem">
-    <div dir="auto" class="ss-item  ss-text">
-        <div class="ss-form-entry">
-            <label class="ss-q-item-label" for="entry_281440977">
-                <div class="ss-q-title">Organization
-                </div>
-                <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-            </label>
+    </tbody>
+  </table>
 
-            <input type="text" name="entry.281440977" value="" class="ss-q-short" id="entry_281440977" dir="auto" aria-label="Organization  "
-                title="">
-            <div class="error-message" id="2057634645_errorMessage"></div>
-            <div class="required-message">This is a required question</div>
-        </div>
-    </div>
-</div>
-<div class="ss-form-question errorbox-good" role="listitem">
-    <div dir="auto" class="ss-item  ss-select">
-        <div class="ss-form-entry">
-            <label class="ss-q-item-label" for="entry_685240374">
-                <div class="ss-q-title">Gender
-                </div>
-                <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-            </label>
-
-            <select name="entry.685240374" id="entry_685240374" aria-label="Gender  ">
-                <option value=""></option>
-                <option value="Female">Female</option>
-                <option value="Male">Male</option>
-                <option value="Other">Other</option>
-            </select>
-            <div class="required-message">This is a required question</div>
-        </div>
-    </div>
-</div>
-<div class="ss-form-question errorbox-good" role="listitem">
-    <div dir="auto" class="ss-item  ss-text">
-        <div class="ss-form-entry">
-            <label class="ss-q-item-label" for="entry_64514545">
-                <div class="ss-q-title">Name
-                </div>
-                <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-            </label>
-
-            <input type="text" name="entry.64514545" value="" class="ss-q-short" id="entry_64514545" dir="auto" aria-label="Name  " title="">
-            <div class="error-message" id="349784311_errorMessage"></div>
-            <div class="required-message">This is a required question</div>
-        </div>
-    </div>
-</div>
-<div class="ss-form-question errorbox-good" role="listitem">
-    <div dir="auto" class="ss-item  ss-text">
-        <div class="ss-form-entry">
-            <label class="ss-q-item-label" for="entry_259539288">
-                <div class="ss-q-title">Organization
-                </div>
-                <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-            </label>
-
-            <input type="text" name="entry.259539288" value="" class="ss-q-short" id="entry_259539288" dir="auto" aria-label="Organization  "
-                title="">
-            <div class="error-message" id="813201006_errorMessage"></div>
-            <div class="required-message">This is a required question</div>
-        </div>
-    </div>
-</div>
-<div class="ss-form-question errorbox-good" role="listitem">
-    <div dir="auto" class="ss-item  ss-select">
-        <div class="ss-form-entry">
-            <label class="ss-q-item-label" for="entry_1300212811">
-                <div class="ss-q-title">Gender
-                </div>
-                <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-            </label>
-
-            <select name="entry.1300212811" id="entry_1300212811" aria-label="Gender  ">
-                <option value=""></option>
-                <option value="Female">Female</option>
-                <option value="Male">Male</option>
-                <option value="Other">Other</option>
-            </select>
-            <div class="required-message">This is a required question</div>
-        </div>
-    </div>
-</div>
-<div class="ss-form-question errorbox-good" role="listitem">
-    <div dir="auto" class="ss-item  ss-text">
-        <div class="ss-form-entry">
-            <label class="ss-q-item-label" for="entry_57871850">
-                <div class="ss-q-title">Name
-                </div>
-                <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-            </label>
-
-            <input type="text" name="entry.57871850" value="" class="ss-q-short" id="entry_57871850" dir="auto" aria-label="Name  " title="">
-            <div class="error-message" id="634833822_errorMessage"></div>
-            <div class="required-message">This is a required question</div>
-        </div>
-    </div>
-</div>
-<div class="ss-form-question errorbox-good" role="listitem">
-    <div dir="auto" class="ss-item  ss-text">
-        <div class="ss-form-entry">
-            <label class="ss-q-item-label" for="entry_213084005">
-                <div class="ss-q-title">Organization
-                </div>
-                <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-            </label>
-
-            <input type="text" name="entry.213084005" value="" class="ss-q-short" id="entry_213084005" dir="auto" aria-label="Organization  "
-                title="">
-            <div class="error-message" id="321889223_errorMessage"></div>
-            <div class="required-message">This is a required question</div>
-        </div>
-    </div>
-</div>
-<div class="ss-form-question errorbox-good" role="listitem">
-    <div dir="auto" class="ss-item  ss-select">
-        <div class="ss-form-entry">
-            <label class="ss-q-item-label" for="entry_975027244">
-                <div class="ss-q-title">Gender
-                </div>
-                <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-            </label>
-
-            <select name="entry.975027244" id="entry_975027244" aria-label="Gender  ">
-                <option value=""></option>
-                <option value="Female">Female</option>
-                <option value="Male">Male</option>
-                <option value="Other">Other</option>
-            </select>
-            <div class="required-message">This is a required question</div>
-        </div>
-    </div>
-</div>
-<div class="ss-form-question errorbox-good" role="listitem">
-    <div dir="auto" class="ss-item  ss-text">
-        <div class="ss-form-entry">
-            <label class="ss-q-item-label" for="entry_1935240492">
-                <div class="ss-q-title">Name
-                </div>
-                <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-            </label>
-
-            <input type="text" name="entry.1935240492" value="" class="ss-q-short" id="entry_1935240492" dir="auto" aria-label="Name  "
-                title="">
-            <div class="error-message" id="1343105909_errorMessage"></div>
-            <div class="required-message">This is a required question</div>
-        </div>
-    </div>
-</div>
-<div class="ss-form-question errorbox-good" role="listitem">
-    <div dir="auto" class="ss-item  ss-text">
-        <div class="ss-form-entry">
-            <label class="ss-q-item-label" for="entry_208841777">
-                <div class="ss-q-title">Organization
-                </div>
-                <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-            </label>
-
-            <input type="text" name="entry.208841777" value="" class="ss-q-short" id="entry_208841777" dir="auto" aria-label="Organization  "
-                title="">
-            <div class="error-message" id="453928371_errorMessage"></div>
-            <div class="required-message">This is a required question</div>
-        </div>
-    </div>
-</div>
-<div class="ss-form-question errorbox-good" role="listitem">
-    <div dir="auto" class="ss-item  ss-select">
-        <div class="ss-form-entry">
-            <label class="ss-q-item-label" for="entry_1941791036">
-                <div class="ss-q-title">Gender
-                </div>
-                <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-            </label>
-
-            <select name="entry.1941791036" id="entry_1941791036" aria-label="Gender  ">
-                <option value=""></option>
-                <option value="Female">Female</option>
-                <option value="Male">Male</option>
-                <option value="Other">Other</option>
-            </select>
-            <div class="required-message">This is a required question</div>
-        </div>
-    </div>
-</div>
-<div class="ss-form-question errorbox-good" role="listitem">
-    <div dir="auto" class="ss-item  ss-text">
-        <div class="ss-form-entry">
-            <label class="ss-q-item-label" for="entry_1013842153">
-                <div class="ss-q-title">Name
-                </div>
-                <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-            </label>
-
-            <input type="text" name="entry.1013842153" value="" class="ss-q-short" id="entry_1013842153" dir="auto" aria-label="Name  "
-                title="">
-            <div class="error-message" id="859808821_errorMessage"></div>
-            <div class="required-message">This is a required question</div>
-        </div>
-    </div>
-</div>
-<div class="ss-form-question errorbox-good" role="listitem">
-    <div dir="auto" class="ss-item  ss-text">
-        <div class="ss-form-entry">
-            <label class="ss-q-item-label" for="entry_1648063217">
-                <div class="ss-q-title">Organization
-                </div>
-                <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-            </label>
-
-            <input type="text" name="entry.1648063217" value="" class="ss-q-short" id="entry_1648063217" dir="auto" aria-label="Organization  "
-                title="">
-            <div class="error-message" id="166781246_errorMessage"></div>
-            <div class="required-message">This is a required question</div>
-        </div>
-    </div>
-</div>
-<div class="ss-form-question errorbox-good" role="listitem">
-    <div dir="auto" class="ss-item  ss-select">
-        <div class="ss-form-entry">
-            <label class="ss-q-item-label" for="entry_1463420630">
-                <div class="ss-q-title">Gender
-                </div>
-                <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-            </label>
-
-            <select name="entry.1463420630" id="entry_1463420630" aria-label="Gender  ">
-                <option value=""></option>
-                <option value="Female">Female</option>
-                <option value="Male">Male</option>
-                <option value="Other">Other</option>
-            </select>
-            <div class="required-message">This is a required question</div>
-        </div>
-    </div>
-</div>
-<div class="ss-form-question errorbox-good" role="listitem">
-    <div dir="auto" class="ss-item  ss-text">
-        <div class="ss-form-entry">
-            <label class="ss-q-item-label" for="entry_402320172">
-                <div class="ss-q-title">Name
-                </div>
-                <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-            </label>
-
-            <input type="text" name="entry.402320172" value="" class="ss-q-short" id="entry_402320172" dir="auto" aria-label="Name  "
-                title="">
-            <div class="error-message" id="232935167_errorMessage"></div>
-            <div class="required-message">This is a required question</div>
-        </div>
-    </div>
-</div>
-<div class="ss-form-question errorbox-good" role="listitem">
-    <div dir="auto" class="ss-item  ss-text">
-        <div class="ss-form-entry">
-            <label class="ss-q-item-label" for="entry_767213139">
-                <div class="ss-q-title">Organization
-                </div>
-                <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-            </label>
-
-            <input type="text" name="entry.767213139" value="" class="ss-q-short" id="entry_767213139" dir="auto" aria-label="Organization  "
-                title="">
-            <div class="error-message" id="750794225_errorMessage"></div>
-            <div class="required-message">This is a required question</div>
-        </div>
-    </div>
-</div>
-<div class="ss-form-question errorbox-good" role="listitem">
-    <div dir="auto" class="ss-item  ss-select">
-        <div class="ss-form-entry">
-            <label class="ss-q-item-label" for="entry_293176972">
-                <div class="ss-q-title">Gender
-                </div>
-                <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-            </label>
-
-            <select name="entry.293176972" id="entry_293176972" aria-label="Gender  ">
-                <option value=""></option>
-                <option value="Female">Female</option>
-                <option value="Male">Male</option>
-                <option value="Other">Other</option>
-            </select>
-            <div class="required-message">This is a required question</div>
-        </div>
-    </div>
-</div>
-<div class="ss-form-question errorbox-good" role="listitem">
-    <div dir="auto" class="ss-item  ss-text">
-        <div class="ss-form-entry">
-            <label class="ss-q-item-label" for="entry_1523702849">
-                <div class="ss-q-title">Name
-                </div>
-                <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-            </label>
-
-            <input type="text" name="entry.1523702849" value="" class="ss-q-short" id="entry_1523702849" dir="auto" aria-label="Name  "
-                title="">
-            <div class="error-message" id="1362589482_errorMessage"></div>
-            <div class="required-message">This is a required question</div>
-        </div>
-    </div>
-</div>
-<div class="ss-form-question errorbox-good" role="listitem">
-    <div dir="auto" class="ss-item  ss-text">
-        <div class="ss-form-entry">
-            <label class="ss-q-item-label" for="entry_1969441950">
-                <div class="ss-q-title">Organization
-                </div>
-                <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-            </label>
-
-            <input type="text" name="entry.1969441950" value="" class="ss-q-short" id="entry_1969441950" dir="auto" aria-label="Organization  "
-                title="">
-            <div class="error-message" id="101990093_errorMessage"></div>
-            <div class="required-message">This is a required question</div>
-        </div>
-    </div>
-</div>
-<div class="ss-form-question errorbox-good" role="listitem">
-    <div dir="auto" class="ss-item  ss-select">
-        <div class="ss-form-entry">
-            <label class="ss-q-item-label" for="entry_88914345">
-                <div class="ss-q-title">Gender
-                </div>
-                <div class="ss-q-help ss-secondary-text" dir="auto"></div>
-            </label>
-
-            <select name="entry.88914345" id="entry_88914345" aria-label="Gender  ">
-                <option value=""></option>
-                <option value="Female">Female</option>
-                <option value="Male">Male</option>
-                <option value="Other">Other</option>
-            </select>
-            <div class="required-message">This is a required question</div>
-        </div>
-    </div>
+  <button id="participants-add" type="button">
+    + Add participant
+  </button>
 </div>
 
 <input type="hidden" name="draftResponse" value="[null,null,&quot;3592625814328440761&quot;]
@@ -809,11 +490,65 @@ lang: en
         }
     }
 
-
     for(var i=0; i<tracksInputs.length; i++) {
         tracksInputs[i].addEventListener('change', updateTrackSubitems);
     }
 
+    var participantsEntryNames = [
+      {
+        name: "entry.107602731",
+        organization: "entry.281440977",
+        gender: "entry.685240374",
+      }, {
+        name: "entry.64514545",
+        organization: "entry.259539288",
+        gender: "entry.1300212811",
+      }, {
+        name: "entry.57871850",
+        organization: "entry.213084005",
+        gender: "entry.975027244",
+      }, {
+        name: "entry.1935240492",
+        organization: "entry.208841777",
+        gender: "entry.1941791036",
+      }, {
+        name: "entry.1013842153",
+        organization: "entry.1648063217",
+        gender: "entry.1463420630",
+      }, {
+        name: "entry.402320172",
+        organization: "entry.767213139",
+        gender: "entry.293176972",
+      }, {
+        name: "entry.1523702849",
+        organization: "entry.1969441950",
+        gender: "entry.88914345",
+      }
+    ];
+
+  var addParticipantsBtt = document.getElementById('participants-add');
+  addParticipantsBtt.addEventListener('click', function(){
+    addParticipants();
+  });
+
+  function addParticipants() {
+    var wrapper = document.getElementById('participants-wrapper');
+    var template = document.getElementById('participants-template');
+
+    var newRow = template.cloneNode(true);
+    newRow.removeAttribute('id');
+
+    var ix = wrapper.childElementCount - 1;
+
+    newRow.innerHTML = newRow.innerHTML
+      .replace('__entry_name__', participantsEntryNames[ix].name)
+      .replace('__entry_organization__', participantsEntryNames[ix].organization)
+      .replace('__entry_gender__', participantsEntryNames[ix].gender);
+
+    wrapper.appendChild(newRow);
+  }
+
+  addParticipants();
 </script>
 
 
