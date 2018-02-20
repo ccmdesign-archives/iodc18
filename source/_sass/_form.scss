@@ -5,6 +5,64 @@ button:focus {
     outline: none;
 }
 
+.select {
+    background-color: transparent;
+    border: 1px solid rgba(white, .3);
+    text-align: left;
+    padding: 0 15px;
+    position: relative;
+    width: 100%;
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        /* IE10+ CSS styles go here */
+        position: inherit;
+        &::before {
+            display:none;
+        }
+        select option {
+            color: #000 !important;
+        }
+    }
+    @-moz-document url-prefix() {
+        position: inherit;
+        &::before {
+            display:none;
+        }
+    }
+    @extend .u-transition;
+
+    &::before {
+        @extend .u-material-icons;
+        content: 'keyboard_arrow_down';
+        position: absolute;
+        right: 0;
+        padding-top: 10px;
+        margin: 0 auto 0 auto;
+        width: 42px;
+        height: 32px;
+        color: white;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    select {
+        height: 42px;
+        border: 0;
+        border-radius: 0;
+        margin: 0;
+        background-color: transparent;
+        width: 100%;
+        -webkit-appearance: none;
+        background-image: none;
+        &:focus {
+        }
+    }
+
+    &:hover {
+        background-color: rgba(white, .2);
+        @extend .u-transition;
+    }
+}
+
 .form--google.form--google.form--google.form--google.form--google.form--google.form--google.form--google.form--google.form--google.form--google.form--google {
   max-width: 700px;
   margin: 0 auto;
@@ -126,7 +184,7 @@ button:focus {
     }
 
     .ss-q-title {
-      font-size: 1.8rem;
+      font-size: 1.3rem;
       text-transform: uppercase;
       font-weight: 600;
     }
@@ -138,13 +196,66 @@ button:focus {
     background-color: transparent;
   }
 
+.ss-secondary-text {
+  small {
+  font-style: italic;
+  opacity: .6;
+  }
+}
 
+.participants {
+  position: relative;
 
+  #participants-add {
+    position: absolute;
+    right: -40px;
+    bottom: 13px;
+    width: 40px;
+    height: 40px;
+    padding: 3px 3px 2px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    @extend .u-transition;
 
+    &:hover {
+      color: white;
+      border: 1px solid white;
+      
+    }
 
+    i { font-size: 2rem; }
+  }
 
+  table {
+    width: 100%;
 
+  }
 
+  th {
+    font-size: 1rem;
+    text-transform: uppercase;
+    opacity: .7;
+    letter-spacing: 1px;
+  }
+
+  tr {
+    
+  }
+
+  td {
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width: 33%;
+  }
+}
+
+.ss-navigate {
+  overflow: hidden;
+}
+
+#navigation-table {
+  float: right;
+}
 
 
 

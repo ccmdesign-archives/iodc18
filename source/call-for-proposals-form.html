@@ -86,7 +86,7 @@ lang: en
 
 <input type="text" name="entry.1575319190" value="" class="ss-q-short" id="entry_1575319190" dir="auto" aria-label="Organization  " title="">
 <div class="error-message" id="1247889689_errorMessage"></div>
-<div class="required-message">This is a required question</div>
+<div class="required-message"></div>
 </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
 <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
 <label class="ss-q-item-label" for="entry_1184610319"><div class="ss-q-title">Email
@@ -95,7 +95,6 @@ lang: en
 <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
 
 <input type="email" name="entry.1184610319" value="" class="ss-q-short" id="entry_1184610319" dir="auto" aria-label="Email  Please enter a valid email" aria-required="true" required="" title="Please enter a valid email">
-<div class="error-message" id="2023801737_errorMessage">Please enter a valid email</div>
 <div class="required-message">This is a required question</div>
 </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
 <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
@@ -252,7 +251,7 @@ lang: en
 
     <ul class="ss-choices" role="radiogroup" aria-label="Impact Areas  "><li class="ss-choice-item">
     <label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.419959100" value="Accountability and Anti-Corruption (parliamentary, elections, party financing)" id="group_419959100_1" role="radio" class="ss-q-radio" aria-label="Accountability and Anti-Corruption (parliamentary, elections, party financing)"></span>
-    <span class="ss-choice-label">Accountability and Anti-Corruption (parliamentary, elections, party financing)</span>
+    <span class="ss-choice-label" style="letter-spacing: -0.4px;">Accountability and Anti-Corruption (parliamentary, elections, party financing)</span>
     </label></li> <li class="ss-choice-item">
     <label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.419959100" value="Agriculture" id="group_419959100_2" role="radio" class="ss-q-radio" aria-label="Agriculture"></span>
     <span class="ss-choice-label">Agriculture</span>
@@ -318,7 +317,7 @@ lang: en
 <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
 <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
 <!-- Custom Line -->
-<div class="ss-q-help ss-secondary-text" dir="auto">One sentence describing purpose and intended outcomes of proposed session</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"><small>One sentence describing purpose and intended outcomes of proposed session</small></div>
 <!-- Custom Line -->
 </label>
 
@@ -374,7 +373,7 @@ lang: en
 <label class="ss-q-item-label" for="entry_238007859"><div class="ss-q-title">Format: Additional Information
 </div>
 <!-- Custom Line -->
-<div class="ss-q-help ss-secondary-text" dir="auto">Additional details on format and approach to session moderation</div></label>
+<div class="ss-q-help ss-secondary-text" dir="auto"><small>Additional details on format and approach to session moderation</small></div></label>
 <!-- Custom Line -->
 </label>
 
@@ -414,7 +413,7 @@ lang: en
 <div class="error-message" id="2059408904_errorMessage"></div>
 <div class="required-message">This is a required question</div></div></div></div>
 
-<div>
+<div class="participants">
   <table>
     <thead>
       <tr>
@@ -434,21 +433,21 @@ lang: en
             title="">
         </td>
         <td>
-          <select name="__entry_gender__" aria-label="Gender  ">
-            <option value=""></option>
-            <option value="Female">Female</option>
-            <option value="Male">Male</option>
-            <option value="Other">Other</option>
-          </select>
+          <div class="select">
+            <select name="__entry_gender__" aria-label="Gender  ">
+              <option value=""></option>
+              <option value="Female">Female</option>
+              <option value="Male">Male</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
         </td>
       </tr>
 
     </tbody>
   </table>
 
-  <button id="participants-add" type="button">
-    + Add participant
-  </button>
+  <button id="participants-add" type="button"><i class="material-icons">add</i></button>
 </div>
 
 <input type="hidden" name="draftResponse" value="[null,null,&quot;3592625814328440761&quot;]
