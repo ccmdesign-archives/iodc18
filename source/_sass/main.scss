@@ -22,7 +22,7 @@ h2 {
 }
 
 .bg {
-  background-image: url(' {{"/images/bg.jpg" | relative_url }}'), linear-gradient(#25568F, #3B88E4);
+  background-image: url('../images/bg.jpg'), linear-gradient(#25568F, #3B88E4);
   background-size: cover;
   background-position: center;
   width: 100vw;
