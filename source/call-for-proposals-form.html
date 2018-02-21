@@ -419,6 +419,7 @@ lang: en
       <tr>
         <th>Name</th>
         <th>Organization</th>
+        <th>Region</th>
         <th>Gender</th>
       </tr>
     </thead>
@@ -434,10 +435,26 @@ lang: en
         </td>
         <td>
           <div class="select">
+            <select name="__entry_region__" aria-label="Region  ">
+              <option value=""></option>
+              <option value="East Asia & Pacific">East Asia & Pacific</option>
+              <option value="Europe & Central Asia">Europe & Central Asia</option>
+              <option value="Latin America & Caribbean">Latin America & Caribbean</option>
+              <option value="Middle East & North Africa">Middle East & North Africa</option>
+              <option value="North America">North America</option>
+              <option value="South Asia">South Asia</option>
+              <option value="Sub-Saharan Africa">Sub-Saharan Africa</option>
+            </select>
+          </div>
+        </td>
+        <td>
+          <div class="select">
             <select name="__entry_gender__" aria-label="Gender  ">
               <option value=""></option>
               <option value="Female">Female</option>
               <option value="Male">Male</option>
+              <option value="Non-binary/third gender">Non-binary/third gender</option>
+              <option value="Prefer not to say">Prefer not to say</option>
               <option value="Other">Other</option>
             </select>
           </div>
@@ -518,31 +535,33 @@ lang: en
       {
         name: "entry.107602731",
         organization: "entry.281440977",
+        region: "entry.1926401346",
         gender: "entry.685240374",
       }, {
         name: "entry.64514545",
         organization: "entry.259539288",
+        region: "entry.1268636920",
         gender: "entry.1300212811",
       }, {
         name: "entry.57871850",
         organization: "entry.213084005",
+        region: "entry.1215976330",
         gender: "entry.975027244",
       }, {
         name: "entry.1935240492",
         organization: "entry.208841777",
+        region: "entry.1356013211",
         gender: "entry.1941791036",
       }, {
         name: "entry.1013842153",
         organization: "entry.1648063217",
+        region: "entry.1306274696",
         gender: "entry.1463420630",
       }, {
         name: "entry.402320172",
         organization: "entry.767213139",
+        region: "entry.1726216341",
         gender: "entry.293176972",
-      }, {
-        name: "entry.1523702849",
-        organization: "entry.1969441950",
-        gender: "entry.88914345",
       }
     ];
 
@@ -563,6 +582,7 @@ lang: en
     newRow.innerHTML = newRow.innerHTML
       .replace('__entry_name__', participantsEntryNames[ix].name)
       .replace('__entry_organization__', participantsEntryNames[ix].organization)
+      .replace('__entry_region__', participantsEntryNames[ix].region)
       .replace('__entry_gender__', participantsEntryNames[ix].gender);
 
     wrapper.appendChild(newRow);
@@ -570,6 +590,7 @@ lang: en
 
   addParticipants();
 </script>
+
 
 
 
