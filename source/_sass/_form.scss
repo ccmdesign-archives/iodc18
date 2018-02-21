@@ -109,7 +109,8 @@ button:focus {
 
   }
 
-  .ss-choices[role="radiogroup"] {
+  .ss-choices[role="radiogroup"],
+    .ss-choices[role="group"]  {
     padding: 0;
     cursor: pointer;
 
