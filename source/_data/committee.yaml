@@ -1,19 +1,17 @@
 - name: Lucia Abelenda
-  org:  Avina
-- name: Aditya Agrawal
-  org:  Global Partnership for Sustainable Development Data 
+  org: Avina
+- name: Shaida Badiee
+  org: Open Data Watch
 - name: Abhinav Bahl
   org: Open Government Partnership (OGP)
-- name: Jaimie Boyd
-  org: Government of Canada
 - name: Paulina Bustos
-  org: Civica Digital 
+  org: Civica Digital
 - name: Ania Calderon
   org: Open Data Charter
 - name: Michael Canares
   org: Open Data Lab Jakarta
 - name: Natalia Carfi
-  org: Government of Argentina 
+  org: Government of Argentina
 - name: Katie Clancy
   org: IDRC - OD4D
 - name: Tim Davies
@@ -42,17 +40,25 @@
   org: Open North
 - name: Andre Laperriere
   org: Global Open Data for Agriculture and Nutrition (GODAN)
+- name: Mark Levene
+  org: Government of Canada
+- name: Yohanna Loucheur
+  org: Global Affairs Canada
 - name: Emma Martinho-Truswell
   org: Oxford Insights
+- name: Maurice McNaughton
+  org: Caribbean Open institute
 - name: Mike Mora
-  org: Organization of American States
+  org: OAS
 - name: Christina Morales
   org: Government of Spain
 - name: Arturo Muente-Kunigami
   org: Inter-American Development Bank
+- name: Nnenna Nwakanma
+  org: Web Foundation
 - name: Georg Neumann
   org: Open Contracting
-- name: Beth Simone Noveck
+- name: Beth Novak
   org: Govlab
 - name: Muchiri Nyaggah
   org: Africa Open Data Network (AODN)
@@ -74,20 +80,28 @@
   org: United Nations Development Programme (UNDP)
 - name: Nancy Salem
   org: Access to Knowledge for Development (A2K4D
+- name: Teresa Scassa
+  org: University of Ottawa
 - name: Fabrizio Scrollini
   org: ILDA
+- name: Jenna Slotin
+  org: United Nations Foundation
 - name: Fiona Smith
   org: Open Data Institute (ODI)
 - name: Salvador Luis Soriano
   org: Government of Spain
-- name: Abdoul Malick Tapsoba 
+- name: Abdoul Malick Tapsoba
   org: Government of Burkina Faso
 - name: Philip Thigo
   org: Government of Kenya
+- name: Yeama Thompson
+  org: Open Data Government, Sierra Leone
 - name: Katherine Townsend
   org: Africa Open Data Conference
 - name: Barbara Ubaldi
   org: OECD
+- name: Kate Vang
+  org: One
 - name: Stefaan Verhulst
   org: GovLab
 - name: Stephen Walker
@@ -95,4 +109,4 @@
 - name: John Wonderlich
   org: Sunlight Foundation
 - name: Khairil Yusof
-  org: Sinar Project Malaysia 
+  org: Sinar Project Malaysia
