@@ -17,7 +17,7 @@ title: IODC18
 email:
 description: >- # this means to ignore newlines until "baseurl:"
 
-baseurl: "/static" # the subpath of your site, e.g. /blog
+# baseurl: "/static" # the subpath of your site, e.g. /blog
 url: "https://ccmdesign.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username:
