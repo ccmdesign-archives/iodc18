@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <title>IODC18</title>
-    
-    <link rel="stylesheet" href="/iodc18/vendor/foundation.min.css">
-    <link rel="stylesheet" href="/iodc18/css/styles.css">
+
+    <link rel="stylesheet" href="/vendor/foundation.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/wax0qbs.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
 
   <body>
-    <div class="bg" style="background-image: url(' /iodc18/images/bg.jpg ');"></div>
+    <div class="bg"></div>
     <div class="map"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    viewBox="0 0 3967 2008.3" style="enable-background:new 0 0 3967 2008.3;" xml:space="preserve">
   <path d="M54.8,390c-15.8,0-28.6,12.8-28.6,28.6c0,15.8,12.8,28.6,28.6,28.6c15.8,0,28.6-12.8,28.6-28.6
@@ -815,25 +815,40 @@
 
     <div class="wrapper header">
       <div class="logo">
-        <a href="./"><img src="/iodc18/images/logo-blue-white.png" alt="IODC18"></a>
+
+        <a href="./">
+            
+                <img src="/images/iodc18-logo-en.png" alt="IODC18">
+            
+        </a>
       </div>
-      
+
       <div class="social-media">
-        <a target="_blank" href="https://www.youtube.com/channel/UC8cKSDSxKSbOnKliM_MhZmQ"><img src="/iodc18/images/youtube.png" alt="youtube icon"></a>
-        <a target="_blank" href="https://www.facebook.com/opendatacon/"><img src="/iodc18/images/facebook.png" alt="facebook icon"></a>
-        <a target="_blank" href="https://twitter.com/opendatacon"><img src="/iodc18/images/twitter.png" alt="twitter icon"></a>
-        <a target="_blank" href="https://www.flickr.com/photos/144810968@N02/albums"><img src="/iodc18/images/flickr.png" alt="flickr icon"></a>
+        <a target="_blank" href="https://www.youtube.com/channel/UC8cKSDSxKSbOnKliM_MhZmQ"><img src="/images/youtube.png" alt="youtube icon"></a>
+        <a target="_blank" href="https://www.facebook.com/opendatacon/"><img src="/images/facebook.png" alt="facebook icon"></a>
+        <a target="_blank" href="https://twitter.com/opendatacon"><img src="/images/twitter.png" alt="twitter icon"></a>
+        <a target="_blank" href="https://www.flickr.com/photos/144810968@N02/albums"><img src="/images/flickr.png" alt="flickr icon"></a>
+        <a target="_blank" href="mailto:contact@opendatacon.org" class="social-media__email"><img src="/images/mail.png" alt="email icon"></a>
       </div>
       <div class="lang">
-        <a class="lang-en lang--active" href="#">EN</a> | <a class="lang-es" href="#">ES</a>
+        
+            <a class="lang-en lang--active" href="#">EN</a> | <a class="lang-es" onclick="document.cookie='lang=es;path=/';window.location.reload()" href="#">ES</a>
+        
       </div>
 
     </div>
+    <div class="back-button">
       
+        
+          <a href="./" class="back-button__button"><i class="material-icons">arrow_back</i>Back</a>
+        
+      
+    </div>
+
     <main role="main" class="wrapper"> <!-- main content starts here -->
 
   <div class="callout callout--small">
-    <h1>Pre-Register</h1>  
+    <h1>Pre-Register</h1>
   </div>
 
   <form action="" class="form">
@@ -847,7 +862,7 @@
         Email
         <input type="email" name="email">
       </label>
-    
+
       <label for="name">
         Proposal Title
         <input type="text" name="name">
@@ -857,10 +872,10 @@
         Description
         <textarea name="" id="" name="description"></textarea>
       </label>
-    
+
 
     <div class="section">
-      <a class="button" href="/iodc18/form.html">Submit</a>
+      <a class="button" href="/conferences/iodc18/program/proposals/new">Submit</a>
     </div>
   </form>
 
@@ -871,17 +886,26 @@
 
 
 
-    
+
     <div class="partners section">
-      <h2>Partners</h2>
-      <a href="#" class="partners__logo" target="_blank"><img class="partners--argentina" src="/iodc18/images/argentina-government-logo.png" alt="Argentina Government"></a>
-      <a href="https://www.idrc.ca/" class="partners__logo" target="_blank"><img class="partners--idrc" src="/iodc18/images/idrc-logo.png" alt="IDRC"></a>
-      <a href="http://www.worldbank.org/" class="partners__logo" target="_blank"><img class="partners--worldbank" src="/iodc18/images/world-bank-logo.png" alt="World Bank"></a>
-      <a href="http://od4d.net/" class="partners__logo" target="_blank"><img class="partners--od4d" src="/iodc18/images/od4d-logo-white.png" alt="OD4D"></a>
+      <a href="#" class="partners__logo" target="_blank"><img class="partners--argentina" src="/images/argentina-government-logo.png" alt="Argentina Government"></a>
+      <a href="https://www.idrc.ca/" class="partners__logo" target="_blank"><img class="partners--idrc" src="/images/idrc-logo-v2.png" alt="IDRC"></a>
+      <a href="http://www.worldbank.org/" class="partners__logo" target="_blank"><img class="partners--worldbank" src="/images/world-bank-logo.png" alt="World Bank"></a>
+      <a href="http://od4d.net/" class="partners__logo" target="_blank"><img class="partners--od4d" src="/images/od4d-logo-white.png" alt="OD4D"></a>
     </div>
-    
+
     <div id="overlay" class="js-overlay"></div>
-    <script src="/iodc18/vendor/jquery-2.1.4.min.js"></script>
-    <script src="/iodc18/js/scripts.js"></script>
+    <script src="/vendor/jquery-2.1.4.min.js"></script>
+    <script src="/js/scripts.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114213094-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-114213094-1');
+    </script>
+
   </body>
 </html>
